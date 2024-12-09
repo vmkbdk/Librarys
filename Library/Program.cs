@@ -75,7 +75,8 @@ namespace Library
 
             foreach (Book b in books)
             {
-                if (string.Equals(b.Title, title, StringComparison.OrdinalIgnoreCase))
+                
+                if (b.Title.IndexOf(title, StringComparison.OrdinalIgnoreCase) == 0)
                 {
                     book = b;
                     break;
